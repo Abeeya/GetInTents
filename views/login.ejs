@@ -1,0 +1,31 @@
+<% include ./partials/header %>
+<div style="background-image: url(http://willowbrookcentre.co.uk/wp-content/uploads/2019/07/Wild-Camping-In-Scotland.jpg); 
+background-size: cover;background-repeat:no-repeat ;height: 833px;">
+<div class="container">
+    
+        <div class="row">
+          <div class="col-sm-12" style="text-align:center; padding-top: 5%">
+             <h3>Login</h3>
+          </div>
+        
+          <div style="width:30%; margin:25px auto;">
+            <form action="/login" method="POST">
+              <div class="form-group">
+                <input class="form-control" type="text" name="username" placeholder="username">
+              </div>
+              <div class="form-group">
+                  <input class="form-control" type="password" name="password" placeholder="password">
+                </div>
+              <div class="form-group" style="text-align:center;">
+                <button class="btn btn-lg btn-primary btn-block">Submit</button>
+              </div>
+            </form>
+            <p>Don't have an account?<a href="/register">register</a></p>
+            <p>Forgot password? Click here to <a href="/forgot">reset</a></p>
+          </div>
+        </div>
+        </div>
+      </div>
+
+<% include ./partials/footer %>
+
